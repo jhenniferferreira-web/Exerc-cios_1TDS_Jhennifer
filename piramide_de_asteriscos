@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    
+    int linhas;
+    int asteriscos;
+    
+    printf("digite a quantidade de linhas por favor:\n");
+    scanf("%d" , &linhas);
+    
+    for(int qtd_linhas= 0; qtd_linhas <= linhas; qtd_linhas++) {
+         for(int j =linhas; j>=qtd_linhas-1; j--) {
+             printf(" ");
+         }
+         for(int i = 1; i <= qtd_linhas + qtd_linhas - 1; i++) {
+             printf("*");
+         }
+         printf("\n");
+    }
+}
